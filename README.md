@@ -45,9 +45,31 @@ La última celda imprime la tabla de cifras del informe, que también queda en `
 
 ---
 
+## Cómo trabajar en equipo con GitHub y Colab
+
+Hay tres lugares distintos, y conviene no confundirlos:
+
+| Lugar | Qué es | Qué se guarda ahí |
+|---|---|---|
+| **Repositorio en GitHub** | La versión oficial del proyecto | El notebook y los datos crudos |
+| **Notebook abierto en Colab** | Una copia del `.ipynb` que se está editando | Los cambios al código, hasta que se guardan en GitHub |
+| **Máquina temporal de Colab** (`/content/`) | Un computador prestado que se borra al desconectarse | La copia del repositorio que usa el código y los resultados (`outputs/`, `data/processed/`) |
+
+Flujo de trabajo:
+
+1. Abrir el notebook desde el enlace de este README.
+2. Ejecutar todo. La primera celda descarga el repositorio en la máquina temporal, o lo actualiza si ya estaba de antes, y muestra qué versión está usando.
+3. Editar el código en el notebook.
+4. Guardar con **Archivo → Guardar una copia en GitHub**, eligiendo este repositorio, la rama `master` y el archivo `E1_pipeline.ipynb`, con un mensaje que diga qué cambió.
+5. Los demás integrantes recargan el enlace para ver la versión nueva.
+
+Dos cuidados:
+- **No editen el notebook dos personas al mismo tiempo.** Al guardar en GitHub, la última versión reemplaza completa a la anterior; no se combinan los cambios.
+- **Los datos crudos no se cambian desde Colab.** Si hay que agregar o reemplazar un archivo en `data/raw/` (por ejemplo, el respaldo de la API), se sube directamente en GitHub con *Add file → Upload files*.
+
 ## Qué está en el repositorio y qué no
 
-El repositorio guarda **solo el código y los datos crudos**. Todo lo que genera el notebook se recrea en cada ejecución y está excluido en `.gitignore`.
+El repositorio guarda **solo el código y los datos crudos**. Todo lo que genera el notebook se recrea en cada ejecución.
 
 ```
 ├── E1_pipeline.ipynb        Notebook único (se versiona sin salidas)
