@@ -1,4 +1,4 @@
-# Multitienda del Sur SpA — Proyecto BI, Entrega 1
+# Multitienda del Sur SpA - Proyecto BI, Entrega 1
 
 **IIC 3752 · Tecnologías para Inteligencia de Negocios · Escuela de Ingeniería UC · 2do semestre 2026 · Grupo 12**
 
