@@ -1,6 +1,6 @@
 {
- "version": "respaldo",
- "autor": "mindicador.cl (copia local; valores INE 2025 publicados por el SII)",
+ "version": "respaldo manual",
+ "autor": "Copia manual en formato de la API de mindicador.cl. Valores: variación mensual del IPC 2025 publicada por el INE (tabla del SII). Se usa solo si la API no responde y no existe ipc_2025_respaldo_api.json.",
  "codigo": "ipc",
  "nombre": "Indice de Precios al Consumidor (IPC)",
  "unidad_medida": "Porcentaje",

@@ -2,3 +2,7 @@
 __pycache__/
 .DS_Store
 retail_multitienda_grupo_12/
+
+# Resultados generados por el notebook: se recrean en cada ejecución
+data/processed/
+outputs/
